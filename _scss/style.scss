@@ -1,0 +1,33 @@
+// ==========================================================================
+// Foundation
+// ==========================================================================
+
+@use "foundation/ress"; //reset
+@use "foundation/base"; //base
+
+// ==========================================================================
+// Layout
+// ==========================================================================
+
+@use "layout/header"; //header
+@use "layout/main"; //main
+@use "layout/_message"; //message
+@use "layout/_news"; //news
+@use "layout/event"; //event
+@use "layout/photo"; //video
+// @use "layout/trouble"; //trouble
+// @use "layout/merit"; //merit
+// @use "layout/flow"; //fllow
+// @use "layout/plan"; //plan
+// @use "layout/customers"; //customers
+// @use "layout/faq"; //faq
+// @use "layout/footer"; //footer
+
+
+// ==========================================================================
+// object
+// ==========================================================================
+
+@use "object/component/global";
+@use "object/component/sec"; //section-title
+@use "object/component/lead"; //lead

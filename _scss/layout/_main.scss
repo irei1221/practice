@@ -1,0 +1,20 @@
+@import "../foundation/import";
+
+/* ---------------------------- */
+/* main
+/* ---------------------------- */
+
+[v-cloak] {
+  display: none;
+}
+
+.app {
+  padding: 20px 0 0 20px;
+  min-width: 1020px;
+  font-size: 3rem;
+  p {
+    &:not(:first-of-type) {
+      margin-top: 20px;
+    }
+  }
+}
