@@ -1,17 +1,26 @@
+// const app = Vue.createApp({
+//   data: () => ({
+//     firstName: '',
+//     lastName: '',
+//     fullName: ''
+//   }),
+//   watch: {
+//     firstName: function(value) {
+//       this.fullName = value + ' ' + this.lastName
+//     },
+//     lastName: function(value) {
+//       this.fullName = this.firstName + ' ' + value
+//     }
+//   }
+// })
 const app = Vue.createApp({
   data: () => ({
-    km: 0,
-    m: 0
+    firstName: '',
+    lastName: '',
   }),
-  watch: {
-    km: function(value) {
-      console.log(value)
-      this.km = value
-      this.m = value * 1000
-    },
-    m: function(value) {
-      this.km = value / 1000
-      this.m = value
+  computed: {
+    fullName: function() {
+      return this.firstName + ' ' + this.lastName
     }
   }
 })
