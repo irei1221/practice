@@ -133,12 +133,35 @@ img {
 }
 
 .app {
-  min-width: 1020px;
   padding: 20px 0 0 20px;
-  font-size: 3rem;
+  min-width: 1020px;
 }
 .app p:not(:first-of-type) {
   margin-top: 20px;
+}
+.app ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px 0;
+}
+.app ul li {
+  font-size: 1.6rem;
+}
+.app ul li a {
+  color: #333;
+  text-decoration: underline;
+}
+.app ul li a:hover {
+  text-decoration: none;
+}
+.app ul li span {
+  margin-left: 8px;
+  display: inline-block;
 }
 
 /* ---------------------------- */
